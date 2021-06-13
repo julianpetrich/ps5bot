@@ -1,16 +1,14 @@
 import argparse
+import os
 import time
 from datetime import datetime
 
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-
-from dotenv import load_dotenv
-
-import os
 
 
 class wait_for_page_load(object):
@@ -236,15 +234,15 @@ if __name__ == "__main__":
 
     PRODUCT_URL = args.product
 
-    LOGIN_USER = os.getenv('LOGIN_USER')
-    LOGIN_PW = os.getenv('LOGIN_PW')
+    LOGIN_USER = os.getenv("LOGIN_USER")
+    LOGIN_PW = os.getenv("LOGIN_PW")
 
-    CREDITCARD_NUMBER = os.getenv('CREDITCARD_NUMBER')
-    CREDITCARD_NAME = os.getenv('CREDITCARD_NAME')
-    CREDITCARD_MONTH = os.getenv('CREDITCARD_MONTH')
-    CREDITCARD_YEAR = os.getenv('CREDITCARD_YEAR')
-    CREDITCARD_PIN = os.getenv('CREDITCARD_PIN')
-    CREDITCARD_EMAIL = os.getenv('CREDITCARD_EMAIL')
+    CREDITCARD_NUMBER = os.getenv("CREDITCARD_NUMBER")
+    CREDITCARD_NAME = os.getenv("CREDITCARD_NAME")
+    CREDITCARD_MONTH = os.getenv("CREDITCARD_MONTH")
+    CREDITCARD_YEAR = os.getenv("CREDITCARD_YEAR")
+    CREDITCARD_PIN = os.getenv("CREDITCARD_PIN")
+    CREDITCARD_EMAIL = os.getenv("CREDITCARD_EMAIL")
 
     run_process(
         product_url=PRODUCT_URL,
