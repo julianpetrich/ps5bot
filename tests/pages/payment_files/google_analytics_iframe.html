@@ -1,0 +1,15 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function() {
+  Shopify = window.Shopify || {};
+  Shopify.Checkout = window.Shopify.Checkout || {};
+  Shopify.Checkout.whitelistedUrls = ["https:\/\/sony-store-th-prd.myshopify.com","https:\/\/store.sony.co.th","https:\/\/checkout.shopify.com"];
+  Shopify.Checkout.whitelistedHostSuffixes = [".shopifypreview.com"];
+})();
+</script>
+<script>!function(){var e=function(e){var t={exports:{}};return e.call(t.exports,t,t.exports),t.exports},o=function(){function n(e,t){for(var i=0;i<t.length;i++){var n=t[i];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,i){return t&&n(e.prototype,t),i&&n(e,i),e}}(),s=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},t=function(e){return e&&e.__esModule?e:{"default":e}},a=e(function(e,t){"use strict";function i(e){if("string"!=typeof e)return!1;var t=e.indexOf(s);if(e.substring(0,t)!==o)return!1;var i=e.substring(t+1);return JSON.parse(i)}function n(e){return""+o+s+JSON.stringify(e)}function r(t){if(!t||void 0===t)return!1;try{return Shopify.Checkout.whitelistedUrls&&-1!==Shopify.Checkout.whitelistedUrls.indexOf(t)||Shopify.Checkout.whitelistedHostSuffixes&&0<Shopify.Checkout.whitelistedHostSuffixes.filter(function(e){return new RegExp("(.*)"+e+"$").test(t)}).length}catch(e){return window.ErrorReporter&&window.ErrorReporter.notify(new Error(e.message),"sandboxed_messages.js - verifiedOrigin"),!1}}Object.defineProperty(t,"__esModule",{value:!0}),t.parseMessage=i,t.buildMessage=n,t.verifiedOrigin=r;var o="shopify_sandboxed_message",s=":"}),i=e(function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=function(){function e(){var n=this;s(this,e),this.calls=[],window.ga=function(){for(var e=arguments.length,t=Array(e),i=0;i<e;i++)t[i]=arguments[i];return n.gaCall(t)}}return o(e,[{key:"gaCall",value:function i(e){var t=this;this.calls.push(e),clearTimeout(this.timeout),this.timeout=setTimeout(function(){0<t.calls.length&&t.sendMessage()},0)}},{key:"listen",value:function n(){var t=this;window.addEventListener("message",function(e){return t.receiveMessage(e)},!1)}},{key:"sendMessage",value:function t(){window.parent.postMessage({type:"analytics",calls:this.calls},this.origin),this.calls=[]}},{key:"receiveMessage",value:function r(e){if((0,a.verifiedOrigin)(e.origin)&&e.source===window.parent&&e.data&&"checkout_context"===e.data.type){this.origin=e.origin,window.Shopify=e.data.Shopify,window.__st=e.data.__st;try{window.additionalScripts()}catch(t){console.error("User script error: ",t)}}}}]),e}();t["default"]=i});e(function(){"use strict";(new(t(i)["default"])).listen()})}("undefined"!=typeof global?global:"undefined"!=typeof window&&window);
+window.additionalScripts = function () {
+  
+};
+</script>
+</head><body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed=""></body></html>
